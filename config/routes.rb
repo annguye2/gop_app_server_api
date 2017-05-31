@@ -7,7 +7,12 @@ Rails.application.routes.draw do
 
   root 'welcome#index' #set root
 
-
+  resources :users do
+    collection do
+      post '/login', to: 'users#login'
+    end
+  end
+  
   resources :user do
     resource :projects
   end
