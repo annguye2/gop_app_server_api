@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  creator: MyString
+  description: MyString
+  comment: MyString
+  feature_url: MyString
+  category: MyString
+
+two:
+  name: MyString
+  creator: MyString
+  description: MyString
+  comment: MyString
+  feature_url: MyString
+  category: MyString

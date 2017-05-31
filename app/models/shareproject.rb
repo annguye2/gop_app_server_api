@@ -1,0 +1,2 @@
+class Shareproject < ApplicationRecord
+end
