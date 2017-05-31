@@ -15,6 +15,8 @@ class ProjectsController < ApplicationController
 
   # POST /projects
   def create
+    puts "this is project_params"
+    puts project_params
     @project = Project.new(project_params)
 
     if @project.save
@@ -46,6 +48,6 @@ class ProjectsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def project_params
-      params.require(:project).permit(:name, :description, :comment, :feature_url, :category)
+      params.require(:project).permit(:name, :description, :comment, :feature_url, :category, :user_id)
     end
 end
