@@ -23,6 +23,43 @@ Below are technologies used to build this server
 
 * Database initialization: $heroku run rails db:seed
 
+#=========== Schema =======================
+user schema {
+  - username: string
+  - name: string
+  - password. string
+  - projects: []. // set of project id
+}
+
+project schema{
+  - project_name: string
+  - name: string
+  - map:  img
+  - description: string
+  - comment:string  (if edit, should leave comment
+  - ersi webservice id: integer // many
+  - user_is: integer
+  - Category: string
+}
+
+Esri webservices schema  {
+  - title: string
+  - url: string. // webservice
+  - description: string
+  - type: string.  // data-type
+  - source: string // original public by "…"
+  - project id: integer // many
+}
+
+#All users can see this project
+shared project schema{
+  - username: string
+  - name: string
+  - project_name: string
+  - projects_id: integer  // project id
+  - user_id; integer
+}
+
 * How to run the test suite: on web-browser runs "https://gop-app-server-api.herokuapp.com/"
 
 * Deployment instructions:
