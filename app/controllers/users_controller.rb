@@ -59,6 +59,8 @@ class UsersController < ApplicationController
       createdUser = User.find_by_username(params[:username])
       if !createdUser
         @user = User.new(user_params)
+        puts "this is new user"
+        puts @user
         if @user.save
           render json: @user, status: :created, location: @user
         else
