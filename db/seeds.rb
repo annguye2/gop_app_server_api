@@ -77,4 +77,23 @@ Feature.create([ # FeatureServer data
     title: "Building_Locations_(USACE_IENC)",
     data_type: "FeatureServer",
     url: "https://services2.arcgis.com/1cdV1mIckpAyI7Wo/ArcGIS/rest/services/Building_Locations_(USACE_IENC)/FeatureServer/0"
- }])
+ },
+
+   {
+     title: "FireStations",
+     data_type: "FeatureServer",
+     url: "https://services2.arcgis.com/1cdV1mIckpAyI7Wo/ArcGIS/rest/services/Fire_Stations/FeatureServer/0"
+  },
+
+  {
+    title: "Power_Plants",
+    data_type: "FeatureServer",
+    url: "https://services2.arcgis.com/1cdV1mIckpAyI7Wo/ArcGIS/rest/services/Power_Plants/FeatureServer/0"
+  },
+  {
+    title: "RoadRailroadTunnels",
+    data_type: "FeatureServer",
+    url: "https://services2.arcgis.com/1cdV1mIckpAyI7Wo/ArcGIS/rest/services/Road_and_Railroad_Tunnels_1/FeatureServer/0"
+  }
+
+ ])
